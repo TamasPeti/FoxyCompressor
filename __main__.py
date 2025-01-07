@@ -93,8 +93,11 @@ class FoxoCompressorApp:
     def open_progress_window(self):
         if self.progress_window is None or not self.progress_window.winfo_exists():
             self.progress_window = tk.Toplevel(self.root)
-            self.progress_window.title("Progress")
+            self.progress_window.title("Foxy Progress and Logs")
             self.progress_window.geometry("400x200")
+            base_path = os.path.dirname(os.path.abspath(__file__))
+            icon_path = os.path.join(base_path, "assets", "foxycompressor.ico")
+            self.progress_window.iconbitmap(icon_path)
 
             self.progress_label = ttk.Label(self.progress_window, text="Starting...")
             self.progress_label.pack(pady=10)
