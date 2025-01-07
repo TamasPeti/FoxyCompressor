@@ -123,7 +123,7 @@ class FoxoCompressorApp:
 
             # Step 2: Compress images
             self.update_progress("Compressing images...")
-            compress_images(sorted_files['images'], self.output_folder, self.update_progress)
+            compress_images(self.output_folder, self.update_progress)  # Only 2 arguments now
             self.update_progress("Images compressed.")
 
             # Step 3: Compress audio
