@@ -5,8 +5,8 @@ def sort_files(input_folder, output_folder):
     categories = {
         'documents': ['.txt', '.text', '.rtf', '.doc', '.docx', '.docm', '.dot', '.dotx', '.pdf', '.odt', '.xls', '.xlsx', '.xlsm', '.xlt', '.xltx', '.csv', '.ods', '.ppt', '.pptx', '.pptm', '.pot', '.potx', '.odp', '.html', '.htm', '.css', '.js', '.py'],
         'audio': ['.mp3', '.wav', '.aac', '.wma', '.mid', '.midi'],
-        'images': ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tif', '.tiff', '.svg'],
-        'videos': ['.mp4', '.avi', '.mpeg', '.mpg', '.wmv', '.mov', '.flv', '.mkv'],
+        'images': ['.jpg', '.jpeg', '.png', '.bmp', '.tif', '.tiff', '.svg'],
+        'videos': ['.mp4', '.avi', '.mpeg', '.gif', '.mpg', '.wmv', '.mov', '.flv', '.mkv'],
         'other': ['.exe', '.app', '.zip', '.rar', '.tar', '.tar.gz', '.tgz', '.mdb', '.accdb', '.sql', '.reg', '.ini', '.dll']
     }
 
